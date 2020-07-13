@@ -1,0 +1,139 @@
+What is Angular?
+Angular is a platform that makes it easy to build applications with the web. Angular combines
+module ,declarative templates, dependency injection, service ,end to end tooling, and integrated best
+practices to solve development challenges. Angular build applications that live on the web, mobile,
+or the desktop.
+
+
+SPA- Single Page Application
+It contain only 1head+1 body
+Angular These are, many E.g:
+Gmail, Google Maps, GitHub.
+ganna.com
+SPA environment in the browser — no page reloads, no extra wait time.
+
+MPA- Multipage Application
+React js 
+vue js
+
+Angular Version/History
+Angular Js - 1.x.x -it is developed in Java Script(js)
+
+
+Angular 2- 2016- It is Developed in Typescript
+It Product of Google+Microsoft
+
+Angular 4- Dec2016- 
+The developers skipped the version 3 due to some confusion. Its final version was released on 23 March 2017.
+- It Adds Routing Concept
+-This version introduced HttpClient, a smaller, easier to use, and more powerful library for making HTTP Requests.
+- It provides the support of conditionally disable animations.
+
+Angular 5- Nov2017
+- It provided some improvements to support for progressive web apps, also provides improvements related to Material Design.
+
+
+Angular 6 may, 2018
+- It was a major relaese which provides some features like: ng update, ng add, Angular Elements, Angular Material + CDK Components, Angular Material Starter Components, CLI Workspaces
+- Animations Performance Improvements, and RxJS v6.
+
+Angular 7 October 18, 2018
+- Updates regarding Application Performance
+Angular Material & CDK
+- Virtual Scrolling
+- Improved Accessibility of Selects
+- Supports Content Projection using web standard for custom elements
+- Dependency updates regarding TypeScript 3.1, RxJS 6.3, Node 10
+
+Angular 8 2018
+Angular 9 2019
+
+Latest Version Angular 10- June 24, 2020 (Still unstable)
+
+Angular Architecture
+I Explained Diagram Block
+- View- To Display End User Info
+- component - To Process A data or to apply Business logic
+- Both are Interconneted with each other of Event Binding & Data Binding
+- App Module- It is main module to register your Component,Provider,Service,Routing Module
+- Injector- It is 3rd party Liabary (like httpmodule,service,notification etc) provided by Angular
+
+
+building blocks of Angular
+● Modules
+● Component
+● Binding
+● Directives
+● Pipe
+● Dependency Injection
+● Services
+● Interface
+● HTTP ,Observables and subscribe
+● Routing
+
+
+
+Explain File Structure - 
+
+1 e2e-End to End
+	It is used for end to end testing tool from product testing to production level (i.e. upto live) basically it required for dev ops people
+
+2 .editorconfig- 
+	It has "dot" before file name so,It is hidden file .It is used for every one for character editing to configure a editor according to your requirements
+3 .gitignore- 
+	Basically name implies "ignore" which content to ignore while uploading your work to github, for that purpose it is used.
+4 angular.json- 
+	It gives All information about the project.Information about File structure path e.g development,testing,e2e-End,production.It is main file for angular to use internally.
+5 Package.json-
+	It has dependancy to add it.There are 2 dependancy 
+	1 Run dependancy
+	2 Dev dependancy
+	It is same as your java i.e. JVM- Run dependancy & JDK- Dev dependancy
+6 tsconfig- 
+	It used for typescript configuration, it contain information about typescript which version it is used, which standard it follows etc
+7 tslint-
+	Which variable has required intelligence or not that you can specify. Developer did not worried about this file.
+8 Environments - 
+	It is used for to live a project to set flag as environment development to production level.This all stuff handled by DevOps people
+9 styles.css-
+	It is global style sheet,to apply css globally to all.
+10 polyfills.ts-
+	It required for angular to fill gap between ES5,ES6 & ES7, Also it it is used for to import animations at browser level.
+11 Karma.config-
+	It is foundation of testing work flow. Ii is used to download jasmine plugin framework. Jasmine framework is used for testing.It is used to enable the plugin
+12 test.ts-
+	It is used for testing purpose
+13 Index.html-
+	It is main file to load your angular application in the browser
+14 main.ts-
+	It is again file, also it is called entry point function.
+15 assets folder-
+	It is used for to keep static data inside the assets folder (image,audio,video or custom json file)
+16 App folder - 
+		It is used for developer to store component files. Every component has 4 basic files
+		1 app.component.html - It is used for View Purpose to end user
+		2 app.component.css - It is used to apply style effect for particular 	 component
+		3 app.component.ts -It is used to process presentation logic data
+		4 app.component.specs.ts - It is used for testing file. Every component has one specs.ts file.
+		 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+

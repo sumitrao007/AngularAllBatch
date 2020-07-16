@@ -1,0 +1,19 @@
+<p>
+  style-binding works!
+</p>
+
+<h1 style="color: blue;"> Normal Html </h1>
+<h2>Apply Style Binding....</h2>
+<h2 [style.color]="'red'"> First eg on style binding </h2>
+
+<h2 [style.color]="mycolor"> Second eg on style binding </h2>
+<hr>
+<h1 [style.color]="rating<4?'red':'blue'"> Third Eg on Style Binding... </h1>
+
+<h1 [style.color]="rating<4?mycolor1:mycolor2"> Four Eg on Style Binding... {{rating}} </h1>
+<hr>
+<div [style.background]="bgcolor">
+<h2>Apply ngStyle Directive this is given by Angular </h2>
+<h1 [ngStyle]="mycolorobj"> Eg on ngStyle </h1>
+</div>
+

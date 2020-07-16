@@ -1,0 +1,24 @@
+.success{
+
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    color: green;
+}
+.warning{
+    color: yellowgreen;
+}
+.special{
+   
+    font-weight: bold;
+    font-size: 52px;
+}
+.danger{
+    color: red;
+}
+
+.on{
+    color: blue;
+}
+.off{
+    color: crimson;
+}

@@ -1,0 +1,66 @@
+Style Binding/one way binding
+css 1 Inline Css -we write code in particular html Element
+e.g <h1 style="color:red;font-size:32px">Hello </h1>
+2 Internal CSS we used style tag to apply css according to a particular HTML Element.But in angular we not use this type of styling 
+e.g
+<style>
+body{
+background:red;
+}
+h1{
+fonst-style:italic;
+}		
+</style>
+
+ 3 External CSS
+	we can give a link of your style sheet in head tag that style sheet haas extension always .css & that css file should be in current folder i.e is recomondaded
+
+body{
+background:red;
+}
+h1{
+color:red;
+}
+#myh1{
+color:red;
+}
+
+.myclass{
+color:red;
+font-style:italic;
+}
+
+In .HTML File 
+<h1 id="myh1">hsdljfh</h1>
+<h1 class="myclass">fksdfk</h1>
+<div class="myclass">dzsdv</div>
+
+[style.background]="property"
+If You want apply more than one style then u can use ngStyle
+[ngStyle]="myobj"
+
+Class Binding /one way binding
+[class]="Property"
+[ngClass]="myobj"
+
+What is Directive?
+A directive is a custom html element that is used to extend the power of html 
+  apply multiple classess angular provide ngclass it is directive,is  custom html attribute angular provides
+
+Event Binding
+(click)="MethodName"
+
+$event-is A special variable provided by Angular, It gives information about Current Dom element
+
+
+
+
+
+
+
+
+
+
+
+
+

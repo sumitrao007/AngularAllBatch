@@ -1,0 +1,37 @@
+<h1>Event Binding Works</h1>
+
+<button (click)="onclick()"> Click Me </button> <br><br>
+
+<!-- $event -->
+
+<button (click)="onclick1($event)" value="Event Occur"> Click Me2 </button> <br><br>
+
+ <button (click)="onRed()">Red</button>
+ <button (click)="onBlue()">Blue</button>
+ <button (click)="onGreen()">Green</button>
+ <button (click)="onPink()">Pink</button>
+
+ <div [style.background]="divcolor">
+
+ </div>
+ <hr>
+
+ <button (click)="onMyDivColor('red')">Red</button>
+ <button (click)="onMyDivColor('blue')">Blue</button>
+ <button (click)="onMyDivColor('green')">Green</button>
+ <button (click)="onMyDivColor('pink')">Pink</button>
+
+ <div [style.background]="divcolor1">
+
+ </div>
+
+ <hr>
+
+ <button (click)="onMyDivColor1($event)" value="red">Red</button>
+ <button (click)="onMyDivColor1($event)" value="blue">Blue</button>
+ <button (click)="onMyDivColor1($event)" value="green">Green</button>
+ <button (click)="onMyDivColor1($event)"  value="pink">Pink</button>
+
+ <div [style.background]="divcolor2">
+
+ </div>

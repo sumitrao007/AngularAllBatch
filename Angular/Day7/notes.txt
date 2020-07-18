@@ -1,0 +1,32 @@
+$event-It Gives Current Dom Element information to access in it
+Where as 
+Template Reference variable- gives the respective dom Element information or Dom Element Property to access in it
+
+Two way Binding
+[(ngModel)]="property_name_ts"
+
+directive
+Component Directives - They contain the detail of how the component should be processed, instantiated and used at runtime. e.g selector,providers,inputs,outputs etc
+
+Structural Directives - These directives are used to manipulate and change the structure of the DOM elements. For example, *ngIf and *ngFor.
+
+Attribute Directives- Attribute directives are used to change the look and behavior of the DOM elements. For example: ngClass, ngStyle etc.
+
+
+What is structral directive  ?
+ Are responsible for HTML layout. They shape or reshape the DOM's structure, typically by adding, removing, or manipulating elements. Structural directives are a key part of Angular.The asterisk ( * ) states it is a structural directive
+
+what is ng-template?
+1ng-template is a virtual element and its contents are displayed only when needed (based on conditions).
+2 ng-template should be used along with structural directives
+
+
+
+
+
+
+
+
+
+
+

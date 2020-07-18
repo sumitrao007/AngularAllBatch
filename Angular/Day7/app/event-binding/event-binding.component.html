@@ -1,0 +1,66 @@
+<p>
+  event-binding works!
+</p>
+
+<input type="text" placeholder="Enter the Name.." (keyup)="onKeyUpEvent()"> <br><br>
+
+<input type="text" placeholder="Enter the Name.." (keydown)="onKeydownEvent()"> <br><br>
+
+<!-- change event -->
+
+<input type="text" 
+(change)="onChangeEvent()" 
+[style.background]="mycolorname" 
+(focus)="onFocus()"
+>
+<hr>
+<button (click)="inputTextEvent()">Show Me</button><br><br>
+<input type="text" [value]="inputtext"> <br><br>
+
+<button (click)="res1=2+2">Perform Addition</button>
+{{res1}} <br><br>
+
+<button (click)="res2=num1+num2">Perform Addition2</button> &nbsp;&nbsp;
+{{res2}}
+<hr>
+ 
+<!-- template refernce variable -->
+
+<input type="text" 
+placeholder="Enter the Text..."
+ #myinput 
+> &nbsp;&nbsp;&nbsp; 
+<button (click)="myTemplateRef(myinput.value)">Use of Template Ref variable</button>
+<hr>
+
+<input  type="text" 
+placeholder="Enter the Text..."
+ #myinput1
+> &nbsp;&nbsp;&nbsp; 
+<button (click)="myTemplateRef1(myinput1)">Use of Template Ref variable</button>
+<hr>
+
+<input #num1 type="text" placeholder="Enter the Number1"> <br><br>
+<input #num2 type="text" placeholder="Enter the Number2"><br><br>
+<button (click)="MyAddition(num1.value,num2.value)">Addition</button> <br><br>
+<input  type="text" placeholder="Result is " [value]="res3">
+
+<hr>
+
+<!-- Two Way Binding -->
+
+<input type="text" [(ngModel)]="myname1"><br><br>
+{{myname1}}
+
+
+
+
+
+
+
+
+
+
+
+
+

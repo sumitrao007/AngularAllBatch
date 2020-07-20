@@ -1,0 +1,113 @@
+<!-- <p>
+  for-directive works!
+</p>
+
+<ul >
+  <li *ngFor="let item of course"> {{item}} </li>
+</ul>
+<hr>
+
+<ul >
+  <li *ngFor="let item of course;index as i"> {{i}} {{item}} </li>
+</ul>
+<hr>
+
+<ul >
+  <li *ngFor="let item of course;index as i"> 
+    <div *ngIf="i==0">
+      index is 0 {{item}}
+    </div>
+  </li>
+</ul>
+
+<hr>
+<ul>
+<li *ngFor="let item of course;first as f">
+  {{f}} {{item}}
+</li>
+
+</ul>
+<hr>
+<ul>
+<li *ngFor="let item of course;last as l">
+  {{l}} {{item}}
+</li>
+</ul>
+
+<hr>
+<ul>
+<li *ngFor="let item of course;even as e">
+  {{e}} {{item}}
+</li>
+</ul>
+
+<hr>
+<ul>
+<li *ngFor="let item of course;odd as o">
+  {{o}} {{item}}
+</li>
+</ul>
+<hr> -->
+
+<table>
+  <thead>
+    <th>Index</th>
+    <th>Course Name</th>
+  </thead>
+  <tbody>
+      <tr *ngFor="let item of course;index as i" >
+        <td> {{i+1}} </td>
+        <td> {{item}} </td>
+      </tr>
+  </tbody>
+
+</table>
+<hr>
+
+<table border="2px">
+  <thead>
+    <th> ID </th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Role</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of empdetails">
+      <td *ngIf="item.id==0;else elsepart"> NA </td>
+      <ng-template #elsepart>
+        <td> {{item.id}} </td>
+      </ng-template>
+      <td> {{item.fname}} </td>
+      <td> {{item.lname}} </td>
+      <td > {{item.role}} </td>
+    </tr>
+  </tbody>
+</table>
+<hr><hr>
+
+<table border="2px">
+  <thead>
+    <th> ID </th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Role</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of empdetails" (mouseover)="onMouseHover(item)" (mouseout)="onMouseOut()" [ngClass]="{'highlight':item.fname==selected}">
+      <td > {{item.id}} </td>      
+      <td> {{item.fname}} </td>
+      <td> {{item.lname}} </td>
+      <td > {{item.role}} </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+

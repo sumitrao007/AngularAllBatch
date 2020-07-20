@@ -1,0 +1,36 @@
+<p>
+  if-directive works!
+</p>
+<h2>Using if directive</h2>
+<div *ngIf="rating<4">
+  Condition is True You are in If loop
+</div>
+<hr>
+<h2>Using if - else directive</h2>
+<div *ngIf="rating<4; else elsepart">
+  Condition is True You are in If-else If Part 
+</div>
+
+<!-- <div #elsepart>
+  Condition is False You are in Else Part
+</div> -->
+
+<ng-template #elsepart>
+  Condition is False You are in Else Part
+</ng-template>
+
+<hr>
+<h2> use True part & else part seperately</h2>
+
+<div *ngIf="rating<4;then mainpart else elsepart2 "></div>
+
+<ng-template #mainpart>
+      <input type="text" placeholder="Enter your name.."><br><br>
+      <button>Submit</button>
+</ng-template>
+
+<ng-template #elsepart2>
+      <div >
+          Condition is false you are in else part...........
+      </div>
+</ng-template>

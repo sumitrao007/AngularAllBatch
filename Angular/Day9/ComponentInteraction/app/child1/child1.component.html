@@ -1,0 +1,28 @@
+<p>
+  child1 works!
+</p>
+<h1>{{myparentdata}}</h1> 
+
+<h1> First name:: &nbsp; {{myparentobj.fname}} </h1>
+<h1> Last name:: &nbsp; {{myparentobj.lname}} </h1>
+<h1> ID:: &nbsp;&nbsp;&nbsp; {{myparentobj.id}} </h1>
+<hr>
+<table>
+  <thead>
+    <th> # </th>
+    <th>First name</th>
+    <th>Last Name</th>
+    <th>ID</th>
+  </thead>
+  <tbody>
+<tr *ngFor="let item of myparentarrobj;index as i">
+  <td> {{i+1}} </td>
+  <td> {{item.fname}} </td>
+  <td> {{item.lname}} </td>
+  <td> {{item.id}} </td>
+
+</tr>
+
+  </tbody>
+</table>
+

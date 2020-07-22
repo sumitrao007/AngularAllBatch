@@ -1,0 +1,28 @@
+Input & Output Properties/Component Interaction
+- We can send Data from parent component to child component
+- component intract with each other with the help of Input & output Property
+- basically it is Decorator to tells the component for data transfer to each other
+-  
+To run application Different Port below Command
+ng serve --port 5000 --open 
+
+
+ViewChild()
+-To Access the Child Method into parent Component
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

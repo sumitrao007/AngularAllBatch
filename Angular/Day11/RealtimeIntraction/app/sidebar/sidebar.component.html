@@ -1,0 +1,9 @@
+<p>
+  sidebar works!
+</p>
+
+<ul>
+  <li *ngFor="let item of songsname;index as i">
+    <button (click)="onClick(i+1)"> {{item}} {{" ("+(i+1)+") "}} </button>
+  </li>
+</ul>

@@ -1,0 +1,12 @@
+.sidebardiv{
+    border: 1px solid red;
+    height: 200px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.listofsongdiv{
+    border: 1px solid green;
+    height: 300px;
+    margin-bottom: 10px;
+    padding: 10px;
+}

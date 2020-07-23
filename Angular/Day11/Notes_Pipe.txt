@@ -1,0 +1,3 @@
+pipe
+pipe to tranform a data before displaying to view
+angular provides built in pipe

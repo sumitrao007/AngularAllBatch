@@ -1,0 +1,54 @@
+<p>
+  http-service works!
+</p>
+<!-- <h2>Add Data UI Part</h2>
+
+<label for="">Title:: &nbsp;&nbsp;</label>
+<input #inputtitle type="text" placeholder="Enter the title..."><br><br>
+<label for="">Body:: &nbsp;&nbsp;</label>
+<input #inputbody type="text" placeholder="Enter the Body..."><br><br>
+
+<button (click)="onAddData(inputtitle.value,inputbody.value)">Post Data</button> -->
+
+<hr>
+<h2></h2>
+<div [hidden]="ishidden">
+  <h2>Update Data</h2>
+  <label for="">ID:: &nbsp;&nbsp;</label>
+  <input type="text" [(ngModel)]="myId"
+  placeholder="Enter the ID" readonly><br><br>
+
+
+  <label for="">Title:: &nbsp;&nbsp;</label>
+<input  type="text" [(ngModel)]="myTitle"
+placeholder="Enter the title..."><br><br>
+<label for="">Body:: &nbsp;&nbsp;</label>
+<input  type="text" [(ngModel)]="myBody"
+placeholder="Enter the Body..."><br><br>
+<button (click)="onFinalUpdate()"> Final Update </button>
+
+</div>
+
+<hr>
+<table>
+    <thead>
+      <th>#</th>
+      <th>ID</th>
+      <th>Action</th>
+      <th>Title</th>
+      <th>Body</th>
+
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of mypost;index as i">
+        <td> {{i}} </td>
+        <td> {{item.id}} </td>
+        <td> <button (click)="OnUpdate(item)">Update</button> 
+          <button (click)="OnDelete(item)">Delete</button> </td>
+        <td> {{item.title}} </td>
+        <td> {{item.body}} </td>
+
+      </tr>
+    </tbody>
+</table>
+

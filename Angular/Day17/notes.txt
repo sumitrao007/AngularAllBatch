@@ -1,0 +1,59 @@
+www.getbootstrap.com or
+w3schools
+-Install bootstrap in angular
+npm install bootstrap@4.0.0 --save
+
+Bootstrap Grid System
+.col- (extra small devices - screen width less than 576px)
+.col-sm- (small devices - screen width equal to or greater than 576px)
+.col-md- (medium devices - screen width equal to or greater than 768px)
+.col-lg- (large devices - screen width equal to or greater than 992px)
+.col-xl- (xlarge devices - screen width equal to or greater than 1200px)
+
+Note :- Each class scales up, so if you wish to set the same widths for sm and md, you only need to specify sm
+
+Angular has class FormControl
+- Used for status & Validity
+-we have to use multiple properties
+ 1 valid -is valid
+ 2 invalid - is  invalid
+ 3 dirty- You typed in that element it is called dirty
+ 4 pristine - we not touched that field or HTML element,also it is called clean means you do not type any thing in that.
+ 5 errors  - is error or not
+ 6 touched
+
+-Template Driven form is used as directive level status & Validation
+ -with minimal compoenet code
+ - Easy to use
+ - Suitable for simple scenarios and fails for complex scenarios 
+ - Automatic track of the form & its data
+- Template driven form used directive
+
+ - The NgModel directive creates the FormControl Instance (angular creates control object) to manage the template form control
+- when we use ngModel directives we must use 'name ' attribute given by HTML, it is required for ngModel
+ - ngModel directive holds the control, that you created for the element and name attribute, also it monitors their properties, including their validity
+- Also Use "required" attribute given by html on that basis we check the error is there or not
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
